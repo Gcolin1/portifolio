@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portifólio - Guilherme Colin</title>
+</head>
+<body>
+    
+    <canvas id="canvas-image-blending"></canvas>
+
+    <div class="menu">
+        <ul>
+            <li><a href="" class="btn btn1">SOBRE MIM</a></li>
+            <li><a href="" class="btn btn1">CONHECIMENTO</a></li>
+            <li><a href="" class="btn btn1">CURRICULO</a></li>
+        </ul>
+    </div>
+
+    <div class="nome">
+        <h1>Guilherme Nascimento Colin</h1>
+        <h2>Web developer - Front-End</h2>
+    </div>
+
+    
+
+        <section class="conhecimentos site">
+            <h1>Conhecimentos</h1>
+            <article>
+                <div class="sombra">
+                    <img src="img/javascript.png" alt="javascript">
+                    <div class="conteudo">
+                        <h2>javascript</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quibusdam excepturi modi velit quae deleniti, quasi ut enim blanditiis illum natus eligendi laudantium dolores, culpa libero eveniet, nemo unde corporis!</p>
+                       <button class="btnJs">Certificados</button>
+                    </div>
+                </div>
+
+                <div class="sombra">
+                    <img src="img/html.jpg" alt="html">
+                    <div class="conteudo">
+                        <h2>HTML</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quibusdam excepturi modi velit quae deleniti, quasi ut enim blanditiis illum natus eligendi laudantium dolores, culpa libero eveniet, nemo unde corporis!</p>
+                       <button class="btnHtml">Certificados</button>
+                    </div>
+                </div>
+
+            </article>
+
+            <article>
+                <div class="sombra">
+                    <img src="img/css.jpg" alt="css">
+                    <div class="conteudo">
+                        <h2>CSS</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quibusdam excepturi modi velit quae deleniti, quasi ut enim blanditiis illum natus eligendi laudantium dolores, culpa libero eveniet, nemo unde corporis!</p>
+                       <button class="btnCss">Certificados</button>
+                    </div>
+                </div>
+
+                <div class="sombra">
+                    <img src="img/react.jpg" alt="react.js">
+                    <div class="conteudo">
+                        <h2>React JS</h2><br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quibusdam excepturi modi velit quae deleniti, quasi ut enim blanditiis illum natus eligendi laudantium dolores, culpa libero eveniet, nemo unde corporis!</p>
+                       <button class="btnReact">Certificados</button>
+                    </div>
+                </div>
+
+            </article>
+
+        
+        </section>
+    
+    
+
+
+
+ 
+  <script src="js/granim.min.js"></script>
+  <script>
+     var granimInstance = new Granim({
+    element: '#canvas-image-blending',
+    direction: 'top-bottom',
+    isPausedWhenNotInView: true,
+    image : {
+        source: 'img/background-lua.png',
+        blendingMode: 'multiply',
+    },
+    states : {
+        "default-state": {
+            gradients: [
+                ['#29323c', '#ffffff'],
+                ['#FF6B6B', '#7a297a'],
+                ['#80d3fe', '#7ea0c4'],
+                ['#f0ab51', '#eceba3']
+            ],
+            transitionSpeed: 7000
+        }
+    }
+});
+  </script>
+</body>
+</html>
