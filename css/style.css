@@ -6,11 +6,29 @@
     width: 100%;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+    background: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(61, 28, 88);
+    border-radius: 15px;
+}
+
 #canvas-image-blending {
     position: absolute;
     display: block;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     right: 0;
     bottom: 0;
@@ -18,7 +36,13 @@
     z-index: -2;
 }
 
+header{
+    margin-bottom: 2.3%;
+}
 
+#background-body{
+    background: linear-gradient(to bottom right,#0d131d, #171f36, #8894d1) ; 
+}
 
 .menu ul{
     z-index: 1;
@@ -99,6 +123,7 @@
     margin-top: 15% ;
 }
 
+
 .nome h2{
     color: #fff;
     font-size: 2.5em;
@@ -108,41 +133,69 @@
     margin-top: 3% ;
 }
 
+.redes-sociais{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.redes-sociais a{
+    margin: 0 1%;
+}
+
 /* CONHECIMENTOS */
 
 .conhecimentos{
-    position: relative;
-    top: 500px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-.conhecimentos h1{
-    font-size: 2.5em;
+.titulo{
+    font-size: 2em;
     font-family: 'Titillium Web', sans-serif;
     display: flex;
     justify-content: center;
-   
+   color: #fff;
 }
 
+.titulo::before{
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ffffff;
+    margin-right: 2%;
+    margin-top: 1.5%;
+    max-width: 200px;
+    }
 
-.conhecimentos article div p{
+   .titulo::after{
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ffffff;
+    margin-left: 2%;
+    margin-top: 1.5%;
+    max-width: 200px;
+    }
+
+
+.conteudo p{
     text-align: justify;
     font-family: 'Titillium Web', sans-serif;
     font-size: 1.2em;
-    font-weight: bold;
-    width: 250PX;
-    margin-left: 4%;
+    max-width: 250PX;
+    margin: 0 10%;
+    color: #ccc;
 }
+
+
 
 .conteudo h2{
-    margin-top: 5%;
-}
-
-.conhecimentos article div h2{
     font-family: 'Titillium Web', sans-serif;
     font-size: 1.5em;
     text-align: center;
-    margin-bottom: 3%;
     font-weight: bold;
+    color: #ccc;
 }
 
 
@@ -151,73 +204,53 @@
     display: flex;
     justify-content: center;
     margin-top: 5%;
-    
-}
-
-.conhecimentos article div img{
-    border-radius: 20px 20px 0 0;
 }
 
 .conhecimentos article div{
+    margin: 0 3%;
+}
+
+
+
+.conteudo{
     margin: 0 5%;
     padding-bottom: 20px;
-    border-radius: 20px;
+    border-radius: 40px;
+}
+
+.conteudo img{
+    margin: 10% 73px;
 }
 
 .sombra{
-    -webkit-box-shadow:16px 19px 24px 23px rgba(62,66,66,0.53);
-    -moz-box-shadow: 16px 19px 24px 23px rgba(62,66,66,0.53);
-    box-shadow: 16px 19px 24px 23px rgba(62,66,66,0.53);
+    background: linear-gradient(to bottom right,#07090E, #111825, #432866) ; 
+    -webkit-box-shadow:29px 29px 29px 10px rgba(0, 0, 0, 0.932);
+    -moz-box-shadow: 29px 29px 29px 10px rgba(0,0,0,0.932);
+    box-shadow: 29px 29px 29px 10px rgba(0,0,0,0.932);
 }
 
-.btnHtml{
-    margin-top: 10%;
-    border: none;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1.5em;
-    margin-left: 23%;
-    background: rgb(226, 115, 24);
-    padding: 5px 15px;
-    border-radius: 10px;
-    color: #fff;
-    font-weight: bold;
+.sobre{
+    padding: 5% 0;
 }
 
-.btnJs{
-    margin-top: 10%;
-    border: none;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1.5em;
-    margin-left: 23%;
-    background: rgb(226, 223, 24);
-    padding: 5px 15px;
-    border-radius: 10px;
-    color: #fff;
-    font-weight: bold;
+.sobre div{
+    max-width: 80%;
+    margin-top: 5%;
+    background: linear-gradient(to bottom right,#07090E, #111825, #432866) ; 
+    -webkit-box-shadow:29px 29px 29px 10px rgba(0, 0, 0, 0.932);
+    -moz-box-shadow: 29px 29px 29px 10px rgba(0,0,0,0.932);
+    box-shadow: 29px 29px 29px 10px rgba(0,0,0,0.932);
+    padding: 5% 3%;
+    border-radius: 40px;
 }
 
-.btnCss{
-    margin-top: 10%;
-    border: none;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1.5em;
-    margin-left: 23%;
-    background: rgb(24, 37, 226);
-    padding: 5px 15px;
-    border-radius: 10px;
+.sobre p{
     color: #fff;
-    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
 }
 
-.btnReact{
-    margin-top: 10%;
-    border: none;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1.5em;
-    margin-left: 23%;
-    background: rgb(8, 12, 59);
-    padding: 5px 15px;
-    border-radius: 10px;
-    color: #fff;
-    font-weight: bold;
+.projetos{
+    padding: 5% 0;
 }
+
