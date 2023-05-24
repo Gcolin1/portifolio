@@ -139,3 +139,44 @@ body::-webkit-scrollbar {
     line-height: 40px;
     text-align: justify;
 }
+
+.info-experiencia{
+    display: flex;
+}
+
+.container_experiencias h2 ,h3, p{
+    color: #f2f2f2;
+}
+
+
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.experiencia h3{
+    font-size: 1.2em;
+}
+
+.experiencia p{
+    font-size: 1em;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.profissional{
+    width: 500px;
+    text-align: center;
+}
+
+.profissional h2{
+    margin: 50px 0;
+    font-size: 1.5em;
+}
+
+.vertical_line{
+    width: 3px;
+    height: 100px;
+    background: #f2f2f2;
+}

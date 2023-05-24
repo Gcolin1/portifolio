@@ -47,6 +47,38 @@ function App() {
                     <p className="conteudo_sobre">meu nome é Guilherme sou formado no curso de técnico em informática, estudo desenvolvimento em Java na ADA e TOTVS e estou em busca de fazer uma graduação em engenharia de software, sou apaixonado por tecnologia e estou sempre me esforçando e estudando para obter novos conhecimentos e me tornar um ótimo desenvolvedor  </p>
                 </div>
             </section>
+
+            <section className='container_experiencias'>
+                <div className="info-experiencia site">
+                    <div className='profissional'>
+                        <h2>Experiencias profissionais</h2>
+
+                        <div className="experiencia">
+                            <h3>Jovem aprendiz - Panco <br></br> 07/2022 a 12/2022</h3>
+                            <p>Auxiliar de escritório em geral</p>
+                        </div>
+
+                        <div className="vertical_line"></div>
+
+                        <div className="experiencia">
+                            <h3>Trainee - Start tech TOTVS e ADA <br></br> 10/2022 a 04/2023</h3>
+                            <p>treinamento em desenvolvimento Java, SQL, Spring Boot Prática na área com ADVPL, Protheus e SQL</p>
+                        </div>
+
+                        <div className="vertical_line"></div>
+
+                        <div className="experiencia">
+                            <h3>Análista de suporte técnico l - TOTVS <br></br> 04/2023 (o momento)</h3>
+                            <p>Prestar suporte a clientes da empresa no sistema totvs food service</p>
+                        </div>
+
+                    </div>
+
+                    <div className='profissional'>
+                        <h2>Formação academica</h2>
+                    </div>
+                </div>
+            </section>
             
         </main>
     </div>
