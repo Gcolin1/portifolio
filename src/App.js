@@ -11,7 +11,7 @@ function App() {
             <nav className='menu'>
                 <ul>
                     <a href="#container_sobre"><li>Sobre mim</li></a>
-                    <a href="#conhecimentos"><li>Conhecimentos</li></a>
+                    <a href="#container_skills"><li>Conhecimentos</li></a>
                     <a href="#projetos"><li>Projetos</li></a>
                     <a href="#contato"><li>Contato</li></a>
                 </ul>
@@ -96,7 +96,7 @@ function App() {
                 </div>
             </section>
 
-            <section className="container_skills">
+            <section id="container_skills">
                 <div className='site container-hard'>
                     <div className='hardskills'>
                         <h2>Hard Skills</h2>
