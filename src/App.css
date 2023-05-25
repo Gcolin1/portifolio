@@ -81,6 +81,12 @@ body::-webkit-scrollbar {
     border-radius: 20px;
     padding: 10px 20px;
     border: solid #f2f2f2 2px;
+    transition: ease-in-out 200ms;
+}
+
+.buttons a:hover{
+    background-color: #f2f2f2;
+    color: #000000;
 }
 
 .info h1{
@@ -121,7 +127,7 @@ body::-webkit-scrollbar {
 #container_sobre{
     display: flex;
     justify-content: center;
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 .titulo{
@@ -144,19 +150,24 @@ body::-webkit-scrollbar {
     display: flex;
 }
 
+.container_experiencias{
+    padding: 100px;
+}
+
 .container_experiencias h2 ,h3, p{
     color: #f2f2f2;
 }
 
 
 .experiencia{
-    display: flex;
     flex-direction: column;
-    margin: 30px 0;
+    margin: 10px 0;
+    text-align: center;
 }
 
 .experiencia h3{
     font-size: 1.2em;
+    margin-left: 100px;    
 }
 
 .experiencia p{
@@ -179,4 +190,98 @@ body::-webkit-scrollbar {
     width: 3px;
     height: 100px;
     background: #f2f2f2;
+}
+
+/*===================================SKILLS=======================================*/
+
+.container_skills{
+    padding: 50px 0;
+    background-color: #080808;
+}
+
+.container_skills h2{
+    color: #f2f2f2;
+}
+
+.container-hard{
+    display: flex;
+}
+
+.hardskills h2{
+    color: #f2f2f2;
+    margin-bottom: 50px;
+}
+
+.hardskills {
+    width: 400px;
+    margin-top: 4rem;
+}
+
+.conhecimento{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 ;
+    margin-bottom: 1rem;
+}
+
+.conhecimento span, h3{
+    margin-right: 100px;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+.container_percentual{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.6rem;
+    background-color: #ccc;
+    border-radius: 20px;
+}
+
+.percentual{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.6rem;
+    background-color: rgb(141, 109, 68);
+    border-radius: 20px;
+}
+.html-bar{
+    width: 70%;
+}
+
+.js-bar{
+    width: 70%;
+}
+
+.react-bar{
+    width: 50%;
+}
+
+.angular-bar{
+    width: 50%;
+}
+
+.css-bar{
+    width: 75%;
+}
+
+.java-bar{
+    width: 40%;
+}
+
+.sql-bar{
+    width: 60%;
+}
+
+.spring-bar{
+    width: 30%;
+}
+
+.softskills {
+    width: 400px;
+    margin-top: 4rem;
 }
